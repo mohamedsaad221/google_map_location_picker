@@ -437,12 +437,15 @@ class _MapFabs extends StatelessWidget {
               heroTag: "layers",
             ),
           if (myLocationButtonEnabled!)
-            FloatingActionButton(
-              onPressed: onMyLocationPressed,
-              materialTapTargetSize: MaterialTapTargetSize.padded,
-              mini: true,
-              child: const Icon(Icons.my_location),
-              heroTag: "myLocation",
+            Padding(
+              padding: const EdgeInsets.only(top: 30),
+              child: FloatingActionButton(
+                onPressed: onMyLocationPressed,
+                materialTapTargetSize: MaterialTapTargetSize.padded,
+                mini: true,
+                child: const Icon(Icons.my_location),
+                heroTag: "myLocation",
+              ),
             ),
         ],
       ),
